@@ -1,0 +1,38 @@
+[
+  {
+    "id": "windows_god_mode_2023",
+    "title": "Unlock 'God Mode' in Windows for Easy Access to All Settings",
+    "os": "Windows",
+    "category": "Customization",
+    "date": "2023-11-16T10:00:00Z",
+    "image": "https://placehold.co/600x400/0078D4/fff?text=Windows+God+Mode",
+    "summary": "Discover a hidden feature in Windows that consolidates all Control Panel applets and administrative tools into a single, easily accessible folder.",
+    "content_html": "<p>The Windows 'God Mode' is not an official feature but a handy trick that creates a special folder giving you quick access to a vast array of settings and tools, all in one place. It's incredibly useful for power users and IT professionals.</p><h4>How to Enable God Mode:</h4><ol><li>Right-click on your desktop (or any folder where you want to create it).</li><li>Select <strong>New</strong> > <strong>Folder</strong>.</li><li>Rename the newly created folder to the following exact string: <br><code>GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}</code></li><li>Press Enter. The folder icon will change, and opening it will reveal a comprehensive list of settings.</li></ol><p>You can replace 'GodMode' with any name you like before the period, for example, 'AdminSettings.{ED7BA470-8E54-465E-825C-99712043E01C}'.</p><p><strong>Caution:</strong> While generally safe, be mindful of the settings you change, as incorrect modifications can affect your system's stability.</p>",
+    "video_embed_url": "https://www.youtube.com/embed/exampleGodMode",
+    "tags": ["Windows", "Productivity", "Settings", "Hidden Feature", "Customization"]
+  },
+  {
+    "id": "linux_htop_ncdu_guide_2023",
+    "title": "Essential Linux Terminal Tools: htop & ncdu for System Monitoring",
+    "os": "Linux",
+    "category": "Productivity",
+    "date": "2023-11-10T14:30:00Z",
+    "image": "https://placehold.co/600x400/FCC624/000?text=Linux+htop+ncdu",
+    "summary": "Boost your Linux system administration skills with htop for interactive process viewing and ncdu for efficient disk usage analysis directly from the terminal.",
+    "content_html": "<p>Mastering the Linux terminal can significantly enhance your productivity. Two indispensable tools for system monitoring are <code>htop</code> and <code>ncdu</code>.</p><h4>htop - Interactive Process Viewer</h4><p><code>htop</code> is an interactive system-monitor process-viewer and process-manager. It provides a dynamic real-time view of a running system. Compared to the traditional <code>top</code> command, <code>htop</code> offers a more user-friendly interface, color-coded displays, and the ability to scroll vertically and horizontally and interact with processes (e.g., kill, renice) using keyboard shortcuts.</p><p><strong>Installation (Debian/Ubuntu):</strong> <code>sudo apt update && sudo apt install htop</code></p><p><strong>Usage:</strong> Simply type <code>htop</code> in your terminal.</p><h4>ncdu - NCurses Disk Usage</h4><p><code>ncdu</code> (NCurses Disk Usage) is a disk usage analyzer with an ncurses interface. It's designed to find space-hogging files and directories on a server or your local machine. After scanning a directory, it presents a navigable list of files and folders sorted by size, making it easy to identify what's consuming your disk space.</p><p><strong>Installation (Debian/Ubuntu):</strong> <code>sudo apt update && sudo apt install ncdu</code></p><p><strong>Usage:</strong> Navigate to the directory you want to analyze (e.g., <code>cd /var</code>) and run <code>ncdu</code>. Use arrow keys to navigate and 'd' to delete selected items (use with caution!).</p>",
+    "video_embed_url": null,
+    "tags": ["Linux", "Terminal", "System Monitoring", "htop", "ncdu", "Productivity"]
+  },
+  {
+    "id": "browser_speedup_tips_2023",
+    "title": "Quick Tips to Speed Up Your Web Browser Performance",
+    "os": "General",
+    "category": "Productivity",
+    "date": "2023-11-06T09:00:00Z",
+    "image": "https://placehold.co/600x400/1DA1F2/fff?text=Browser+Speed",
+    "summary": "Is your web browser feeling sluggish? Try these simple yet effective tips to improve its speed and responsiveness for a smoother online experience.",
+    "content_html": "<p>A slow browser can be a major drag on productivity. Here are some common culprits and how to address them:</p><ul><li><strong>Clear Cache and Cookies:</strong> Over time, cached data and cookies can accumulate and slow things down. Regularly clear them through your browser's settings (History > Clear browsing data).</li><li><strong>Disable Unused Extensions:</strong> Browser extensions can add useful functionality, but too many active ones can consume resources. Disable or remove extensions you no longer use.</li><li><strong>Update Your Browser:</strong> Ensure your browser is always updated to the latest version. Updates often include performance improvements and security patches.</li><li><strong>Manage Tabs:</strong> Having dozens of tabs open simultaneously can strain your system's memory. Use tab management extensions or make it a habit to close unneeded tabs.</li><li><strong>Check for Malware:</strong> Malware can significantly impact browser performance. Run a scan with a reputable antivirus/antimalware tool.</li><li><strong>Reset Browser Settings (Last Resort):</strong> If all else fails, you can try resetting your browser to its default settings. This will typically disable extensions, clear temporary data, but keep your bookmarks and passwords.</li></ul>",
+    "video_embed_url": null,
+    "tags": ["Browser", "Performance", "Productivity", "Tips", "Optimization"]
+  }
+]

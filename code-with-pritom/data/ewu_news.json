@@ -1,0 +1,76 @@
+[
+  {
+    "id": "ewu_ai_research_grant_2023",
+    "university": "East West University",
+    "university_logo": "../assets/img/ewu_logo.png",
+    "title": "EWU Professor Awarded Prestigious Grant for AI in Healthcare Research",
+    "date": "2023-11-22T14:00:00Z",
+    "category": "Research",
+    "image": "https://placehold.co/600x400/ffc107/000?text=EWU+AI+Grant",
+    "summary": "Dr. Fatima Ahmed from EWU's CSE department has secured a significant research grant to spearhead a project on leveraging Artificial Intelligence for early disease detection in remote healthcare settings.",
+    "tags": ["EWU", "AI", "Research", "Healthcare", "Grant"],
+    "isSpotlight": true, 
+    "details_link": "#",
+    "media_links": {
+      "pdf": "https://example.com/ewu_ai_grant_details.pdf"
+    }
+  },
+  {
+    "id": "ewu_cse_fest_2024_announcement",
+    "university": "East West University",
+    "university_logo": "../assets/img/ewu_logo.png",
+    "title": "EWU Announces Dates for Annual CSE Fest 2024",
+    "date": "2023-11-19T11:00:00Z",
+    "category": "Event",
+    "image": "https://placehold.co/600x400/ffc107/000?text=EWU+CSE+Fest+2024",
+    "summary": "The highly anticipated EWU CSE Fest 2024 is scheduled for March 10-12, featuring programming contests, project showcases, gaming competitions, and tech talks. Registrations open soon!",
+    "tags": ["EWU", "CSE Fest", "Event", "Competition", "Student Activities"],
+    "isSpotlight": false,
+    "details_link": "#",
+    "media_links": null
+  },
+  {
+    "id": "ewu_new_cybersecurity_lab_2023",
+    "university": "East West University",
+    "university_logo": "../assets/img/ewu_logo.png",
+    "title": "State-of-the-Art Cybersecurity Lab Inaugurated at EWU",
+    "date": "2023-11-14T16:00:00Z",
+    "category": "Academics",
+    "image": "https://placehold.co/600x400/ffc107/000?text=EWU+Cyber+Lab",
+    "summary": "East West University has unveiled a new, advanced Cybersecurity Lab equipped with the latest tools and technologies to provide students with hands-on experience in network security and ethical hacking.",
+    "tags": ["EWU", "Cybersecurity", "Lab", "Academics", "Infrastructure"],
+    "isSpotlight": true,
+    "details_link": "#",
+    "media_links": {
+        "video": "https://youtube.com/embed/exampleEWULab"
+    }
+  },
+  {
+    "id": "ewu_alumni_meetup_dec2023",
+    "university": "East West University",
+    "university_logo": "../assets/img/ewu_logo.png",
+    "title": "EWU CSE Alumni Association Announces Annual Meetup",
+    "date": "2023-11-10T09:30:00Z",
+    "category": "Alumni",
+    "image": "https://placehold.co/600x400/ffc107/000?text=EWU+Alumni+Meet",
+    "summary": "The EWU CSE Alumni Association invites all graduates to the annual grand meetup on December 15th, 2023, for an evening of networking, reminiscence, and celebration.",
+    "tags": ["EWU", "Alumni", "Networking", "Event"],
+    "isSpotlight": false,
+    "details_link": "#",
+    "media_links": null
+  },
+  {
+    "id": "ewu_robotics_club_workshop_2023",
+    "university": "East West University",
+    "university_logo": "../assets/img/ewu_logo.png",
+    "title": "EWU Robotics Club Hosts 'Intro to Arduino' Workshop",
+    "date": "2023-11-07T13:00:00Z",
+    "category": "Club Activity",
+    "image": "https://placehold.co/600x400/ffc107/000?text=EWU+Robotics+Club",
+    "summary": "The EWU Robotics Club successfully conducted a hands-on workshop for beginners on Arduino programming and basic robotics, attracting a large number of enthusiastic students.",
+    "tags": ["EWU", "Robotics Club", "Workshop", "Arduino", "Student Club"],
+    "isSpotlight": false,
+    "details_link": "#",
+    "media_links": null
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "js_async_await_guide",
+    "title": "Mastering Async/Await in JavaScript for Cleaner Code",
+    "language": "JavaScript",
+    "difficulty": "Intermediate",
+    "date": "2023-11-21T09:00:00Z",
+    "image": "https://placehold.co/600x400/f0db4f/000?text=JS+Async/Await",
+    "summary": "Understand the power of async/await in JavaScript to write asynchronous code that is easier to read, write, and maintain, avoiding callback hell.",
+    "content_md": "Async/Await is syntactic sugar built on top of Promises, making asynchronous code look and behave a bit more like synchronous code. This greatly improves readability.\n\n**Key Concepts:**\n- `async` keyword: Used to declare an asynchronous function. Such functions implicitly return a Promise.\n- `await` keyword: Can only be used inside an `async` function. It pauses the execution of the async function until the Promise is resolved or rejected.\n\n**Example:**\n```javascript\nasync function fetchData() {\n  try {\n    const response = await fetch('https://api.example.com/data');\n    if (!response.ok) {\n      throw new Error(`HTTP error! status: ${response.status}`);\n    }\n    const data = await response.json();\n    console.log(data);\n  } catch (error) {\n    console.error('Could not fetch data:', error);\n  }\n}\n\nfetchData();\n```\n\nError handling is typically done using `try...catch` blocks, just like with synchronous code.",
+    "codepen_link": "https://codepen.io/pen/",
+    "tags": ["JavaScript", "ES6+", "Asynchronous", "Promises", "Best Practice"]
+  },
+  {
+    "id": "python_list_comprehensions_magic",
+    "title": "Python List Comprehensions: Write Concise & Readable Code",
+    "language": "Python",
+    "difficulty": "Beginner",
+    "date": "2023-11-17T11:00:00Z",
+    "image": "https://placehold.co/600x400/306998/fff?text=Python+List+Comp",
+    "summary": "Discover the elegance and efficiency of Python's list comprehensions, a powerful tool for creating lists based on existing iterables in a single, readable line.",
+    "content_md": "List comprehensions offer a shorter syntax when you want to create a new list based on the values of an existing list.\n\n**Basic Syntax:** `[expression for item in iterable if condition]`\n\n**Examples:**\n\nCreating a list of squares:\n```python\nsquares = [x**2 for x in range(10)]\n# Result: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]\n```\n\nFiltering even numbers and squaring them:\n```python\neven_squares = [x**2 for x in range(10) if x % 2 == 0]\n# Result: [0, 4, 16, 36, 64]\n```\n\nList comprehensions are often more readable and performant than using `map()` and `filter()` or traditional `for` loops for simple list creations.",
+    "codepen_link": null,
+    "tags": ["Python", "List Comprehension", "Readability", "Efficiency", "Data Structures"]
+  },
+  {
+    "id": "cpp_smart_pointers_intro",
+    "title": "Introduction to Smart Pointers in Modern C++ (std::unique_ptr, std::shared_ptr)",
+    "language": "C++",
+    "difficulty": "Intermediate",
+    "date": "2023-11-13T15:00:00Z",
+    "image": "https://placehold.co/600x400/004482/fff?text=C%2B%2B+Smart+Pointers",
+    "summary": "Learn how to use C++ smart pointers (unique_ptr, shared_ptr, weak_ptr) to manage memory automatically and prevent common issues like memory leaks and dangling pointers.",
+    "content_md": "Smart pointers are objects that act like pointers but also manage the memory they point to. They automatically deallocate memory when it's no longer needed, reducing the risk of memory leaks.\n\n**`std::unique_ptr`:**\n- Owns the pointed-to object exclusively.\n- Cannot be copied, only moved.\n- Automatically deallocates memory when it goes out of scope.\n```cpp\n#include <memory>\n#include <iostream>\n\nclass MyClass { public: ~MyClass() { std::cout << \"MyClass destroyed\\n\"; } };\n\nint main() {\n  std::unique_ptr<MyClass> ptr1 = std::make_unique<MyClass>();\n  // std::unique_ptr<MyClass> ptr2 = ptr1; // Error: Cannot copy\n  std::unique_ptr<MyClass> ptr3 = std::move(ptr1); // OK: Ownership transferred\n  return 0; // ptr3 automatically deallocates MyClass\n}\n```\n\n**`std::shared_ptr`:**\n- Allows multiple `shared_ptr` instances to own the same object through reference counting.\n- The object is deallocated when the last `shared_ptr` owning it is destroyed or reset.\n```cpp\n#include <memory>\n#include <iostream>\n\n// ... MyClass definition ...\n\nint main() {\n  std::shared_ptr<MyClass> sptr1 = std::make_shared<MyClass>();\n  std::shared_ptr<MyClass> sptr2 = sptr1; // Both point to the same object, ref count is 2\n  std::cout << \"Use count: \" << sptr1.use_count() << std::endl; // Output: 2\n  return 0; // MyClass destroyed when both sptr1 and sptr2 go out of scope\n}\n```\nUsing smart pointers is a cornerstone of modern C++ (RAII - Resource Acquisition Is Initialization).",
+    "codepen_link": null,
+    "tags": ["C++", "Memory Management", "Smart Pointers", "RAII", "Modern C++"]
+  }
+]

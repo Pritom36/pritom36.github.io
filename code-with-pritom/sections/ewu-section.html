@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EWU Zone - News & Updates - Code With Pritom</title>
+    <meta name="description" content="Dedicated section for East West University (EWU) students. Get the latest CSE news, event announcements, and resources specific to EWU.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+KsvqD0ផ្UOUSJRccuGsLF6UiAbkPNoXDckLDHHoVEwvIVYBMMzpbOy1M=" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="preload">
+
+    <!-- Site Loader -->
+    <div class="site-loader" id="siteLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="../index.html" class="logo-link" aria-label="Code With Pritom Homepage">
+                <img src="../assets/img/logo.png" alt="Code With Pritom Logo" class="logo-image">
+                <span class="logo-text">Code With Pritom</span>
+            </a>
+            <nav class="main-navigation" id="mainNav">
+                <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close menu"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown active">Updates <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cse-news.html" class="nav-link">CSE News</a></li>
+                            <li><a href="ewu-section.html" class="nav-link active">EWU Zone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="seminars.html" class="nav-link">Events</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown">Learn <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="programming.html" class="nav-link">Programming</a></li>
+                            <li><a href="pc-tricks.html" class="nav-link">PC Tricks</a></li>
+                            <li><a href="marketing.html" class="nav-link">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html" class="nav-link">About</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon theme-icon-dark"></i>
+                    <i class="fas fa-sun theme-icon-light"></i>
+                </button>
+                <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="site-main">
+
+        <!-- Page Header Section - EWU Themed -->
+        <section class="page-header-section ewu-themed-header bg-light-alt">
+            <div class="container" data-aos="fade-up">
+                <img src="../assets/img/ewu_logo.png" alt="East West University Logo" class="ewu-page-header-logo">
+                <h1 class="page-title">EWU Zone</h1>
+                <p class="page-subtitle">Your dedicated hub for all news, events, and resources related to the CSE Department at East West University.</p>
+            </div>
+        </section>
+        
+        <!-- EWU Spotlight / Pinned News Section -->
+        <section class="ewu-spotlight-section section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">EWU Spotlight</h2>
+                     <p class="section-subtitle">Key announcements and featured content for EWU students.</p>
+                </div>
+                <div id="ewu-spotlight-container" class="grid-layout featured-grid dynamic-content-container">
+                    <!-- JS could load 1-2 pinned/featured EWU items here from ewu_news.json -->
+                    <div class="content-loader-placeholder">Loading EWU spotlight...</div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EWU News Listing Section -->
+        <section class="content-listing-section section-padding bg-default"> <!-- Default bg or alternate -->
+            <div class="container">
+                 <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">All EWU Updates</h2>
+                    <a href="ewu-section.html" class="btn btn-link view-all-btn" style="float:right;">See All EWU News <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div id="ewu-news-items-container" class="grid-layout news-grid dynamic-content-container">
+                    <!-- JS will populate this with items from data/ewu_news.json -->
+                     <div class="content-loader-placeholder">Loading EWU news articles...</div>
+                </div>
+
+                <!-- Pagination Controls -->
+                <div id="ewu-news-pagination" class="pagination-controls">
+                    <!-- JS will populate this -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget about-widget">
+                    <h4 class="widget-title">Code With Pritom</h4>
+                     <img src="../assets/img/logo.png" alt="Code With Pritom Footer Logo" class="footer-logo">
+                    <p>Your companion in navigating the world of Computer Science and Engineering. Curated insights by Arup Bhowmik Pritom.</p>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="cse-news.html">CSE News</a></li>
+                        <li><a href="ewu-section.html">EWU Zone</a></li>
+                        <li><a href="seminars.html">Events</a></li>
+                        <li><a href="../about.html">About Pritom</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Learn & Grow</h4>
+                     <ul>
+                        <li><a href="programming.html">Programming Tips</a></li>
+                        <li><a href="pc-tricks.html">PC Productivity</a></li>
+                        <li><a href="marketing.html">Digital Marketing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget social-widget">
+                    <h4 class="widget-title">Connect</h4>
+                    <p>Follow us on social media for more updates and discussions.</p>
+                    <div class="social-icons-footer">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Code With Pritom. Crafted with <i class="fas fa-heart" style="color: red;"></i> by Arup Bhowmik Pritom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="../assets/js/main-ui.js"></script>
+    <script src="../assets/js/content-loader.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (document.getElementById('ewu-spotlight-container')) {
+                 // Load 1-2 featured EWU items.
+                 loadContent('../data/ewu_news.json', 'ewu-spotlight-container', {
+                    limit: 2,
+                    filter: (item) => item.isSpotlight === true, // Assuming an 'isSpotlight' flag in JSON
+                    template: 'ewuSpotlightCard'
+                });
+            }
+            if (document.getElementById('ewu-news-items-container')) {
+                const ewuNewsOptions = {
+                    itemsPerPage: 6,
+                    template: 'newsCard', // Re-use newsCard or make an ewuNewsCard
+                    filterControls: {
+                        category: 'ewuCategoryFilter',
+                        sort: 'ewuSortBy',
+                        applyButton: 'applyEWUFiltersBtn'
+                    }
+                };
+                setupFilterListeners(
+                    ewuNewsOptions.filterControls,
+                    '../data/ewu_news.json',
+                    'ewu-news-items-container',
+                    'ewu-news-pagination',
+                    ewuNewsOptions
+                );
+                loadPaginatedContent('../data/ewu_news.json', 'ewu-news-items-container', 'ewu-news-pagination', ewuNewsOptions);
+            }
+        });
+    </script>
+</body>
+</html>

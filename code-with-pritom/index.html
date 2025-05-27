@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code With Pritom - Your Tech & CSE Hub</title>
+    <meta name="description" content="Welcome to Code With Pritom! Your central source for CSE news, tech insights, event updates, programming tips, and digital skills for students in Bangladesh.">
+
+    <!-- Favicon (place these in your project root) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+KsvqD0ផ្UOUSJRccuGsLF6UiAbkPNoXDckLDHHoVEwvIVYBMMzpbOy1M=" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" integrity="sha512-rd0qOHVMO3eC_EGO3TRjUSsbMstIFctVkHOrE1LFLfnP0elOK3QNNoPZajYpgYllP9IuwgzvVLSfixP_KIYzA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="preload"> <!-- Preload class to prevent animations on load -->
+
+    <!-- Site Loader -->
+    <div class="site-loader" id="siteLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link" aria-label="Code With Pritom Homepage">
+                <img src="assets/img/logo.png" alt="Code With Pritom Logo" class="logo-image">
+                <span class="logo-text">Code With Pritom</span>
+            </a>
+            <nav class="main-navigation" id="mainNav">
+                <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close menu"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown">Updates <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sections/cse-news.html" class="nav-link">CSE News</a></li>
+                            <li><a href="sections/ewu-section.html" class="nav-link">EWU Zone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sections/seminars.html" class="nav-link">Events</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown">Learn <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sections/programming.html" class="nav-link">Programming</a></li>
+                            <li><a href="sections/pc-tricks.html" class="nav-link">PC Tricks</a></li>
+                            <li><a href="sections/marketing.html" class="nav-link">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon theme-icon-dark"></i>
+                    <i class="fas fa-sun theme-icon-light"></i>
+                </button>
+                <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="site-main">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">Empowering <span class="highlight">CSE Students</span> Across Bangladesh</h1>
+                    <p class="hero-subtitle">Your daily digest of tech news, university updates, coding tips, and career insights. Curated by Arup Bhowmik Pritom.</p>
+                    <div class="hero-cta">
+                        <a href="sections/cse-news.html" class="btn btn-primary btn-lg">Explore Latest News</a>
+                        <a href="#featured-content" class="btn btn-outline-light btn-lg scroll-to">Featured Content</a>
+                    </div>
+                </div>
+                <!-- Optional: Hero image or background element -->
+            </div>
+        </section>
+
+        <!-- Latest Updates Section -->
+        <section class="latest-updates-section section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Fresh Off The Press</h2>
+                    <p class="section-subtitle">The most recent happenings in the world of CSE and tech.</p>
+                    <a href="sections/cse-news.html" class="btn btn-secondary view-all-btn">View All CSE News <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div id="latest-news-container" class="grid-layout news-grid dynamic-content-container">
+                    <!-- JS will populate this with items from cse_department_news.json -->
+                    <div class="content-loader-placeholder">Loading latest updates...</div>
+                </div>
+                <!-- No pagination here, just a few latest items -->
+            </div>
+        </section>
+
+        <!-- Featured Content Section (e.g., EWU Spotlight, Hot Seminar) -->
+        <section id="featured-content" class="featured-content-section section-padding bg-light-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Spotlight & Highlights</h2>
+                    <p class="section-subtitle">Don't miss these important updates and popular resources.</p>
+                </div>
+                <div id="featured-items-container" class="grid-layout featured-grid dynamic-content-container">
+                    <!-- JS could populate this from ewu_news.json, seminars.json, etc. or a dedicated featured.json -->
+                    <!-- Example static placeholder, to be replaced by dynamic content -->
+                    <article class="card content-card featured-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-image-container">
+                            <img src="https://placehold.co/600x400/ffc107/000?text=EWU+Spotlight" alt="EWU Spotlight" class="card-image">
+                            <span class="card-category-badge ewu-badge">EWU Zone</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="sections/ewu-section.html?id=ewu_item_1">EWU Announces New AI Research Initiative</a></h3>
+                            <p class="card-excerpt">East West University's CSE department is launching a groundbreaking research program focused on ethical AI...</p>
+                            <div class="card-meta">
+                                <span class="meta-date"><i class="fas fa-calendar-alt"></i> Oct 28, 2023</span>
+                            </div>
+                            <a href="sections/ewu-section.html?id=ewu_item_1" class="btn btn-link card-read-more">Read More <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <article class="card content-card featured-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-image-container">
+                            <img src="https://placehold.co/600x400/007bff/fff?text=Top+Seminar" alt="Top Seminar" class="card-image">
+                            <span class="card-category-badge seminar-badge">Seminar</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="sections/seminars.html?id=seminar_item_1">Upcoming: Web3 & Decentralized Future</a></h3>
+                            <p class="card-excerpt">Join our free online seminar to explore the fundamentals of Web3, blockchain, and their impact on the future...</p>
+                             <div class="card-meta">
+                                <span class="meta-date"><i class="fas fa-calendar-alt"></i> Nov 15, 2023</span>
+                                <span class="meta-location"><i class="fas fa-map-marker-alt"></i> Online</span>
+                            </div>
+                            <a href="sections/seminars.html?id=seminar_item_1" class="btn btn-link card-read-more">Event Details <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                     <article class="card content-card featured-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-image-container">
+                            <img src="https://placehold.co/600x400/28a745/fff?text=Hot+Programming+Tip" alt="Programming Tip" class="card-image">
+                            <span class="card-category-badge programming-badge">Programming</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="sections/programming.html?tip=js_async_await">Mastering Async/Await in JavaScript</a></h3>
+                            <p class="card-excerpt">A quick guide to understanding and using async/await for cleaner asynchronous code in JavaScript...</p>
+                             <div class="card-meta">
+                                <span class="meta-difficulty"><i class="fas fa-signal"></i> Intermediate</span>
+                            </div>
+                            <a href="sections/programming.html?tip=js_async_await" class="btn btn-link card-read-more">Read Tip <i class="fas fa-chevron-right"></i></a>
+                        </div>
+                    </article>
+                    <!-- End Example static placeholder -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action / Subscription Section -->
+        <section class="cta-section section-padding">
+            <div class="container text-center" data-aos="zoom-in">
+                <h2 class="cta-title">Don't Miss Out!</h2>
+                <p class="cta-subtitle">Subscribe to "Code With Pritom" and get the latest updates, tips, and event invites directly in your inbox.</p>
+                <form id="indexSubscriptionForm" class="subscription-form">
+                    <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email for subscription">
+                    <button type="submit" class="btn btn-primary btn-lg">Subscribe Now</button>
+                </form>
+                <p class="form-privacy-notice">We value your privacy. No spam, ever.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget about-widget">
+                    <h4 class="widget-title">Code With Pritom</h4>
+                    <img src="assets/img/logo.png" alt="Code With Pritom Footer Logo" class="footer-logo">
+                    <p>Your companion in navigating the world of Computer Science and Engineering. Curated insights by Arup Bhowmik Pritom.</p>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sections/cse-news.html">CSE News</a></li>
+                        <li><a href="sections/ewu-section.html">EWU Zone</a></li>
+                        <li><a href="sections/seminars.html">Events</a></li>
+                        <li><a href="about.html">About Pritom</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Learn & Grow</h4>
+                     <ul>
+                        <li><a href="sections/programming.html">Programming Tips</a></li>
+                        <li><a href="sections/pc-tricks.html">PC Productivity</a></li>
+                        <li><a href="sections/marketing.html">Digital Marketing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget social-widget">
+                    <h4 class="widget-title">Connect</h4>
+                    <p>Follow us on social media for more updates and discussions.</p>
+                    <div class="social-icons-footer">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Code With Pritom. Crafted with <i class="fas fa-heart" style="color: red;"></i> by Arup Bhowmik Pritom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEUnგანიზATIONSwjNFPA8ErЗаh1/GMWjKIVHteKSMiD1A=="" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="assets/js/main-ui.js"></script> <!-- For general UI interactions: theme, nav, search, back-to-top, AOS init -->
+    <script src="assets/js/content-loader.js"></script> <!-- For fetching and displaying dynamic content -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize content for index page
+            if (document.getElementById('latest-news-container')) {
+                loadContent('data/cse_department_news.json', 'latest-news-container', {
+                    limit: 3,
+                    template: 'newsCard',
+                    sort: { field: 'date', order: 'desc' }
+                });
+            }
+            if (document.getElementById('featured-items-container')) {
+                // Example: Load 1 EWU, 1 Seminar, 1 Programming tip (custom logic can be added)
+                // For now, just show 1 EWU spotlight as a demo
+                loadContent('data/ewu_news.json', 'featured-items-container', {
+                    limit: 1,
+                    template: 'ewuSpotlightCard',
+                    filter: (item) => item.isSpotlight === true,
+                    sort: { field: 'date', order: 'desc' }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

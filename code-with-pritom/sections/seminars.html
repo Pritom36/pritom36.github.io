@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seminars & Tech Meetups - Code With Pritom</title>
+    <meta name="description" content="Discover upcoming free seminars, workshops, and tech meetups. RSVP and join events. Access archives of past events with recaps and media.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+KsvqD0ផ្UOUSJRccuGsLF6UiAbkPNoXDckLDHHoVEwvIVYBMMzpbOy1M=" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- FullCalendar CSS (if you plan to use it later) -->
+    <!-- <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/main.min.css' rel='stylesheet' /> -->
+
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body class="preload">
+
+    <!-- Site Loader -->
+    <div class="site-loader" id="siteLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="../index.html" class="logo-link" aria-label="Code With Pritom Homepage">
+                <img src="../assets/img/logo.png" alt="Code With Pritom Logo" class="logo-image">
+                <span class="logo-text">Code With Pritom</span>
+            </a>
+            <nav class="main-navigation" id="mainNav">
+                <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close menu"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown">Updates <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cse-news.html" class="nav-link">CSE News</a></li>
+                            <li><a href="ewu-section.html" class="nav-link">EWU Zone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="seminars.html" class="nav-link active">Events</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown">Learn <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="programming.html" class="nav-link">Programming</a></li>
+                            <li><a href="pc-tricks.html" class="nav-link">PC Tricks</a></li>
+                            <li><a href="marketing.html" class="nav-link">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html" class="nav-link">About</a></li>
+                    <li><a href="../contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon theme-icon-dark"></i>
+                    <i class="fas fa-sun theme-icon-light"></i>
+                </button>
+                <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="site-main">
+
+        <!-- Page Header Section -->
+        <section class="page-header-section bg-light-alt">
+            <div class="container" data-aos="fade-up">
+                <h1 class="page-title">Seminars & Tech Meetups</h1>
+                <p class="page-subtitle">Explore upcoming and past learning opportunities, workshops, and community gatherings.</p>
+            </div>
+        </section>
+
+        <!-- Upcoming Events Section -->
+        <section class="upcoming-events-section section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <p class="section-subtitle">Mark your calendars for these exciting events!</p>
+                    <!-- Optional: Link to a calendar view page -->
+                    <!-- <a href="#event-calendar-view" class="btn btn-outline scroll-to">View Calendar</a> -->
+                </div>
+                
+                <!-- Filtering for Events -->
+                <div class="filter-controls-bar" data-aos="fade-up" data-aos-delay="100">
+                    <div class="filter-group">
+                        <label for="eventTypeFilter" class="filter-label">Type:</label>
+                        <select id="eventTypeFilter" name="type" class="filter-select">
+                            <option value="">All Types</option>
+                            <option value="seminar">Seminar</option>
+                            <option value="workshop">Workshop</option>
+                            <option value="meetup">Meetup</option>
+                            <option value="webinar">Webinar</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="eventModeFilter" class="filter-label">Mode:</label>
+                        <select id="eventModeFilter" name="mode" class="filter-select">
+                            <option value="">Online/Offline</option>
+                            <option value="online">Online</option>
+                            <option value="offline">Offline</option>
+                        </select>
+                    </div>
+                    <button id="applyEventFiltersBtn" class="btn btn-primary filter-apply-btn">Filter Events</button>
+                </div>
+
+                <div id="upcoming-events-container" class="grid-layout events-grid dynamic-content-container">
+                    <!-- JS will populate this with items from data/seminars.json (filtered for upcoming) -->
+                    <div class="content-loader-placeholder">Loading upcoming events...</div>
+                    <!-- Example Event Card Structure
+                    <article class="card content-card event-card" data-aos="fade-up">
+                        <div class="card-image-container">
+                            <img src="https://placehold.co/600x400/28a745/fff?text=Event+Banner" alt="Event Title" class="card-image">
+                            <span class="card-category-badge event-type-badge">Webinar</span>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Future of AI in Web Development</a></h3>
+                            <div class="card-meta event-meta">
+                                <span class="meta-date"><i class="fas fa-calendar-alt"></i> November 20, 2023</span>
+                                <span class="meta-time"><i class="fas fa-clock"></i> 7:00 PM - 9:00 PM (GMT+6)</span>
+                                <span class="meta-location"><i class="fas fa-map-marker-alt"></i> Online via Zoom</span>
+                            </div>
+                            <p class="card-excerpt">Join industry experts to discuss how AI is shaping the future of web development practices and tools...</p>
+                            <div class="event-actions">
+                                <a href="#" class="btn btn-secondary rsvp-btn">RSVP Now</a>
+                                <a href="#" class="btn btn-link add-to-calendar-btn"><i class="fas fa-calendar-plus"></i> Add to Calendar</a>
+                            </div>
+                        </div>
+                    </article>
+                    -->
+                </div>
+                <div id="upcoming-events-pagination" class="pagination-controls">
+                    <!-- JS will populate this -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Optional: Calendar View Section (Placeholder for now) -->
+        <!--
+        <section id="event-calendar-view" class="event-calendar-section section-padding bg-light-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Event Calendar</h2>
+                </div>
+                <div id="calendarContainer" data-aos="fade-up" data-aos-delay="100">
+                     Placeholder for FullCalendar or similar JS calendar 
+                    <p class="text-center">Calendar view coming soon!</p>
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Past Events Archive Section -->
+        <section class="past-events-section section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Past Events Archive</h2>
+                    <p class="section-subtitle">Missed an event? Catch up with recordings and resources.</p>
+                </div>
+                <div id="past-events-container" class="grid-layout events-grid dynamic-content-container">
+                    <!-- JS will populate this with items from data/seminars.json (filtered for past) -->
+                    <div class="content-loader-placeholder">Loading past events...</div>
+                     <!-- Example Past Event Card
+                    <article class="card content-card event-card past-event" data-aos="fade-up">
+                         <div class="card-image-container">
+                            <img src="https://placehold.co/600x400/6c757d/fff?text=Past+Event" alt="Past Event Title" class="card-image">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title"><a href="#">Python for Data Science Bootcamp</a></h3>
+                            <div class="card-meta event-meta">
+                                <span class="meta-date"><i class="fas fa-calendar-alt"></i> October 5-7, 2023</span>
+                            </div>
+                            <p class="card-excerpt">A recap of our intensive 3-day bootcamp on Python for Data Science. Access recordings and materials.</p>
+                            <a href="#" class="btn btn-primary view-recap-btn">View Recap & Resources</a>
+                        </div>
+                    </article>
+                    -->
+                </div>
+                 <div id="past-events-pagination" class="pagination-controls">
+                    <!-- JS will populate this -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget about-widget">
+                    <h4 class="widget-title">Code With Pritom</h4>
+                     <img src="../assets/img/logo.png" alt="Code With Pritom Footer Logo" class="footer-logo">
+                    <p>Your companion in navigating the world of Computer Science and Engineering. Curated insights by Arup Bhowmik Pritom.</p>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="cse-news.html">CSE News</a></li>
+                        <li><a href="ewu-section.html">EWU Zone</a></li>
+                        <li><a href="seminars.html">Events</a></li>
+                        <li><a href="../about.html">About Pritom</a></li>
+                        <li><a href="../contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Learn & Grow</h4>
+                     <ul>
+                        <li><a href="programming.html">Programming Tips</a></li>
+                        <li><a href="pc-tricks.html">PC Productivity</a></li>
+                        <li><a href="marketing.html">Digital Marketing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget social-widget">
+                    <h4 class="widget-title">Connect</h4>
+                    <p>Follow us on social media for more updates and discussions.</p>
+                    <div class="social-icons-footer">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Code With Pritom. Crafted with <i class="fas fa-heart" style="color: red;"></i> by Arup Bhowmik Pritom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- FullCalendar JS (if you plan to use it later) -->
+    <!-- <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/main.min.js'></script> -->
+    <script src="../assets/js/main-ui.js"></script>
+    <script src="../assets/js/content-loader.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Load Upcoming Events
+            if (document.getElementById('upcoming-events-container')) {
+                loadPaginatedContent('../data/seminars.json', 'upcoming-events-container', 'upcoming-events-pagination', {
+                    itemsPerPage: 6,
+                    template: 'eventCard',
+                    filterFunction: (item) => new Date(item.date) >= new Date(), // Filter for upcoming
+                    // filterControls: { eventType: 'eventTypeFilter', mode: 'eventModeFilter', applyButton: 'applyEventFiltersBtn' }
+                });
+            }
+            // Load Past Events
+            if (document.getElementById('past-events-container')) {
+                 loadPaginatedContent('../data/seminars.json', 'past-events-container', 'past-events-pagination', {
+                    itemsPerPage: 4,
+                    template: 'pastEventCard', // Potentially a different template for past events
+                    filterFunction: (item) => new Date(item.date) < new Date(), // Filter for past
+                    initialSort: { field: 'date', order: 'desc' } // Sort past events by date descending
+                });
+            }
+
+            // Initialize FullCalendar (Example for future use)
+            // if (document.getElementById('calendarContainer')) {
+            //     var calendarEl = document.getElementById('calendarContainer');
+            //     var calendar = new FullCalendar.Calendar(calendarEl, {
+            //         initialView: 'dayGridMonth',
+            //         events: 'data/seminars_fc.json' // Path to a JSON feed formatted for FullCalendar
+            //     });
+            //     calendar.render();
+            // }
+        });
+    </script>
+</body>
+</html>

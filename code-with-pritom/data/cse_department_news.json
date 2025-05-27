@@ -1,0 +1,90 @@
+[
+  {
+    "id": "buet_hackathon_2023",
+    "university": "BUET",
+    "university_logo": "../assets/img/uni_placeholder.png",
+    "title": "BUET Announces Inter-University Hackathon 'CodeStorm 2023'",
+    "date": "2023-11-20T10:00:00Z",
+    "category": "Event",
+    "image": "https://placehold.co/600x400/007bff/fff?text=BUET+Hackathon",
+    "summary": "Bangladesh University of Engineering and Technology (BUET) is set to host its annual flagship hackathon, CodeStorm, inviting innovative minds from universities across the country to solve real-world problems.",
+    "tags": ["BUET", "Hackathon", "Competition", "Innovation"],
+    "details_link": "#",
+    "media_links": {
+      "video": null,
+      "pdf": "https://example.com/codestorm_rules.pdf"
+    }
+  },
+  {
+    "id": "du_ml_workshop_nov23",
+    "university": "Dhaka University",
+    "university_logo": "../assets/img/uni_placeholder.png",
+    "title": "Dhaka University CSE Concludes Successful Workshop on Applied Machine Learning",
+    "date": "2023-11-18T17:00:00Z",
+    "category": "Workshop",
+    "image": "https://placehold.co/600x400/28a745/fff?text=DU+ML+Workshop",
+    "summary": "The Department of CSE at Dhaka University recently organized a 3-day intensive workshop focusing on practical applications of Machine Learning, attended by over 150 students and professionals.",
+    "tags": ["DU", "Machine Learning", "Workshop", "AI", "Python"],
+    "details_link": "#",
+    "media_links": {
+      "video": "https://youtube.com/embed/exampleDU",
+      "pdf": null
+    }
+  },
+  {
+    "id": "nsu_cybersec_seminar_2023",
+    "university": "North South University",
+    "university_logo": "../assets/img/uni_placeholder.png",
+    "title": "NSU Hosts Seminar on 'Emerging Threats in Cybersecurity'",
+    "date": "2023-11-15T14:00:00Z",
+    "category": "Seminar",
+    "image": "https://placehold.co/600x400/dc3545/fff?text=NSU+Cybersecurity",
+    "summary": "North South University's Department of Electrical and Computer Engineering invited leading cybersecurity experts to discuss the latest trends and emerging threats in the digital landscape.",
+    "tags": ["NSU", "Cybersecurity", "Seminar", "Tech Talk"],
+    "details_link": "#",
+    "media_links": null
+  },
+  {
+    "id": "ju_iot_project_showcase_2023",
+    "university": "Jahangirnagar University",
+    "university_logo": "../assets/img/uni_placeholder.png",
+    "title": "JU CSE Students Showcase Innovative IoT Projects",
+    "date": "2023-11-12T11:30:00Z",
+    "category": "Student Project",
+    "image": "https://placehold.co/600x400/17a2b8/fff?text=JU+IoT+Projects",
+    "summary": "Final year students from Jahangirnagar University's CSE department presented a diverse range of IoT-based solutions targeting healthcare, agriculture, and smart city applications.",
+    "tags": ["JU", "IoT", "Innovation", "Student Showcase"],
+    "details_link": "#",
+    "media_links": {
+        "pdf": "https://example.com/ju_iot_abstracts.pdf"
+    }
+  },
+  {
+    "id": "sust_robotics_win_2023",
+    "university": "SUST",
+    "university_logo": "../assets/img/uni_placeholder.png",
+    "title": "SUST Robotics Team 'RoboSapiens' Wins National Championship",
+    "date": "2023-11-08T16:00:00Z",
+    "category": "Achievement",
+    "image": "https://placehold.co/600x400/fd7e14/000?text=SUST+Robotics",
+    "summary": "Team RoboSapiens from Shahjalal University of Science and Technology clinched the top prize at the National Robotics Competition 2023 for their autonomous rescue robot.",
+    "tags": ["SUST", "Robotics", "Competition", "Achievement"],
+    "details_link": "#",
+    "media_links": null
+  },
+  {
+    "id": "bracu_ai_symposium_2023",
+    "university": "BRAC University",
+    "university_logo": "../assets/img/uni_placeholder.png",
+    "title": "BRAC University to Host International AI Symposium",
+    "date": "2023-11-05T09:00:00Z",
+    "category": "Symposium",
+    "image": "https://placehold.co/600x400/20c997/000?text=BRACU+AI+Symposium",
+    "summary": "BRAC University is gearing up to host an international symposium on Artificial Intelligence, bringing together researchers, industry leaders, and policymakers to discuss the future of AI.",
+    "tags": ["BRACU", "AI", "Symposium", "International Event"],
+    "details_link": "#",
+    "media_links": {
+        "video": "https://youtube.com/embed/exampleBRACU"
+    }
+  }
+]

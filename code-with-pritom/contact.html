@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Code With Pritom</title>
+    <meta name="description" content="Get in touch with Code With Pritom. Send us your feedback, suggestions, questions, or subscribe to our newsletter.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS (Animate on Scroll) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+KsvqD0ផ្UOUSJRccuGsLF6UiAbkPNoXDckLDHHoVEwvIVYBMMzpbOy1M=" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="preload">
+
+    <!-- Site Loader -->
+    <div class="site-loader" id="siteLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header" id="siteHeader">
+        <div class="container header-container">
+            <a href="index.html" class="logo-link" aria-label="Code With Pritom Homepage">
+                <img src="assets/img/logo.png" alt="Code With Pritom Logo" class="logo-image">
+                <span class="logo-text">Code With Pritom</span>
+            </a>
+            <nav class="main-navigation" id="mainNav">
+                <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close menu"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown">Updates <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sections/cse-news.html" class="nav-link">CSE News</a></li>
+                            <li><a href="sections/ewu-section.html" class="nav-link">EWU Zone</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sections/seminars.html" class="nav-link">Events</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link has-dropdown">Learn <i class="fas fa-chevron-down dropdown-icon"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="sections/programming.html" class="nav-link">Programming</a></li>
+                            <li><a href="sections/pc-tricks.html" class="nav-link">PC Tricks</a></li>
+                            <li><a href="sections/marketing.html" class="nav-link">Digital Marketing</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon theme-icon-dark"></i>
+                    <i class="fas fa-sun theme-icon-light"></i>
+                </button>
+                <button class="menu-toggle-btn" id="menuToggleBtn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="site-main">
+
+        <!-- Page Header Section -->
+        <section class="page-header-section bg-light-alt">
+            <div class="container" data-aos="fade-up">
+                <h1 class="page-title">Get In Touch</h1>
+                <p class="page-subtitle">We'd love to hear from you! Send us a message or subscribe to our updates.</p>
+            </div>
+        </section>
+
+        <!-- Contact Info & Form Section -->
+        <section class="contact-form-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info-content" data-aos="fade-right">
+                        <h2 class="section-title-alt">Contact Information</h2>
+                        <p>Have a question, suggestion, or just want to say hello? Reach out to us through any of the channels below. We're always happy to connect with our community.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <i class="fas fa-envelope icon"></i>
+                                <div>
+                                    <h4>Email Us</h4>
+                                    <p><a href="mailto:info@codewithpritom.com">info@codewithpritom.com</a> (Example)</p>
+                                </div>
+                            </div>
+                             <div class="contact-detail-item">
+                                <i class="fas fa-share-alt icon"></i>
+                                <div>
+                                    <h4>Follow Us</h4>
+                                    <div class="contact-social-icons">
+                                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <div>
+                                    <h4>Our Location (Optional)</h4>
+                                    <p>Dhaka, Bangladesh (General Location)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p>For partnership inquiries or content submissions, please email us directly.</p>
+                    </div>
+
+                    <div class="contact-form-container" data-aos="fade-left" data-aos-delay="200">
+                        <h2 class="section-title-alt">Send Us a Message</h2>
+                        <form id="contactPageForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="contactName">Full Name <span class="required-asterisk">*</span></label>
+                                <input type="text" id="contactName" name="name" placeholder="e.g., John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address <span class="required-asterisk">*</span></label>
+                                <input type="email" id="contactEmail" name="email" placeholder="e.g., john.doe@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactSubject">Subject</label>
+                                <input type="text" id="contactSubject" name="subject" placeholder="e.g., Feedback, Question">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Your Message <span class="required-asterisk">*</span></label>
+                                <textarea id="contactMessage" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+                            </div>
+                            <div class="form-group form-group-checkbox">
+                                <input type="checkbox" id="contactSubscribe" name="subscribe" value="yes" checked>
+                                <label for="contactSubscribe">Also subscribe me to the Code With Pritom newsletter.</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                            <div id="formStatusMessage" class="form-status-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Optional: Map Section -->
+        <!-- 
+        <section class="map-section">
+            <div class="container-fluid no-padding">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.871950058249!2d90.38691561539076!3d23.75209099462974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8bcd6813721%3A0x1c4add284007a811!2sEast%20West%20University!5e0!3m2!1sen!2sbd!4v1637000000000!5m2!1sen!2sbd" 
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="EWU Location Map"></iframe>
+            </div>
+        </section>
+        -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget about-widget">
+                    <h4 class="widget-title">Code With Pritom</h4>
+                     <img src="assets/img/logo.png" alt="Code With Pritom Footer Logo" class="footer-logo">
+                    <p>Your companion in navigating the world of Computer Science and Engineering. Curated insights by Arup Bhowmik Pritom.</p>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sections/cse-news.html">CSE News</a></li>
+                        <li><a href="sections/ewu-section.html">EWU Zone</a></li>
+                        <li><a href="sections/seminars.html">Events</a></li>
+                        <li><a href="about.html">About Pritom</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h4 class="widget-title">Learn & Grow</h4>
+                     <ul>
+                        <li><a href="sections/programming.html">Programming Tips</a></li>
+                        <li><a href="sections/pc-tricks.html">PC Productivity</a></li>
+                        <li><a href="sections/marketing.html">Digital Marketing</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget social-widget">
+                    <h4 class="widget-title">Connect</h4>
+                    <p>Follow us on social media for more updates and discussions.</p>
+                    <div class="social-icons-footer">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© <span id="currentYear"></span> Code With Pritom. Crafted with <i class="fas fa-heart" style="color: red;"></i> by Arup Bhowmik Pritom.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/main-ui.js"></script>
+    <script>
+        // Optional: Add specific JS for contact form submission handling (e.g., AJAX)
+        // For now, main-ui.js might have basic HTML5 validation handling.
+        // document.addEventListener('DOMContentLoaded', () => {
+        //     const contactForm = document.getElementById('contactPageForm');
+        //     const formStatus = document.getElementById('formStatusMessage');
+        //     if (contactForm) {
+        //         contactForm.addEventListener('submit', function(e) {
+        //             e.preventDefault();
+        //             // Basic client-side validation can be enhanced here
+        //             // For a real app, you'd use FormData and fetch to send to a server endpoint
+        //             formStatus.textContent = 'Sending message... (Demo)';
+        //             formStatus.className = 'form-status-message sending';
+        //             setTimeout(() => {
+        //                 formStatus.textContent = 'Message sent successfully! (Demo)';
+        //                 formStatus.className = 'form-status-message success';
+        //                 contactForm.reset();
+        //                  setTimeout(() => { formStatus.textContent = ''; formStatus.className = 'form-status-message'; }, 5000);
+        //             }, 2000);
+        //         });
+        //     }
+        // });
+    </script>
+</body>
+</html>

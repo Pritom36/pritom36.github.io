@@ -1,0 +1,92 @@
+[
+  {
+    "id": "web3_future_seminar_nov2023",
+    "title": "Web3 & The Decentralized Future: An In-depth Exploration",
+    "date": "2023-11-28T18:00:00Z",
+    "type": "Webinar",
+    "mode": "Online",
+    "platform": "Zoom",
+    "organizer": "Tech Insights Community",
+    "image": "https://placehold.co/600x400/800080/fff?text=Web3+Seminar",
+    "summary": "Join leading experts as they delve into the core concepts of Web3, blockchain technology, NFTs, DAOs, and their potential impact on various industries. Interactive Q&A session included.",
+    "speakers": [
+      {"name": "Dr. Alex Chen", "title": "Blockchain Researcher"},
+      {"name": "Sarah Miller", "title": "Web3 Developer"}
+    ],
+    "tags": ["Web3", "Blockchain", "NFT", "DAO", "Future Tech"],
+    "rsvp_link": "#",
+    "calendar_link": "#",
+    "resources_link": null
+  },
+  {
+    "id": "ai_ethics_workshop_dec2023",
+    "title": "Workshop: Ethical Considerations in AI Development",
+    "date": "2023-12-05T10:00:00Z",
+    "type": "Workshop",
+    "mode": "Offline",
+    "location": "EWU Auditorium, Dhaka",
+    "organizer": "EWU CSE Department & AI Ethics Initiative",
+    "image": "https://placehold.co/600x400/008080/fff?text=AI+Ethics+Workshop",
+    "summary": "A hands-on workshop designed for students and developers to understand and address ethical challenges in designing and deploying AI systems. Includes case studies and group discussions.",
+    "speakers": [
+      {"name": "Prof. John Doe", "title": "AI Ethicist"}
+    ],
+    "tags": ["AI", "Ethics", "Workshop", "Responsible AI", "Development"],
+    "rsvp_link": "#",
+    "calendar_link": "#",
+    "resources_link": null
+  },
+  {
+    "id": "data_science_career_meetup_dec2023",
+    "title": "Data Science Career Path: Insights from Industry Professionals",
+    "date": "2023-12-12T19:00:00Z",
+    "type": "Meetup",
+    "mode": "Online",
+    "platform": "Google Meet",
+    "organizer": "Data Enthusiasts BD",
+    "image": "https://placehold.co/600x400/4682B4/fff?text=Data+Science+Meetup",
+    "summary": "Connect with experienced data scientists and analysts to learn about career opportunities, required skills, and industry trends in the field of data science and analytics.",
+    "speakers": [
+      {"name": "Jane Smith", "title": "Lead Data Scientist, Alpha Corp"},
+      {"name": "Mike Brown", "title": "Analytics Manager, Beta Solutions"}
+    ],
+    "tags": ["Data Science", "Career", "Meetup", "Networking", "Analytics"],
+    "rsvp_link": "#",
+    "calendar_link": "#",
+    "resources_link": null
+  },
+  {
+    "id": "python_bootcamp_recap_oct2023",
+    "title": "Recap: Python for Beginners Bootcamp",
+    "date": "2023-10-15T12:00:00Z", 
+    "type": "Bootcamp",
+    "mode": "Online",
+    "organizer": "Code With Pritom",
+    "image": "https://placehold.co/600x400/6c757d/fff?text=Python+Bootcamp+Recap",
+    "summary": "A successful 3-day online bootcamp covering Python fundamentals, data structures, and an introduction to web scraping. Recordings and materials are now available.",
+    "speakers": [],
+    "tags": ["Python", "Bootcamp", "Beginner", "Past Event", "Learning"],
+    "rsvp_link": null, 
+    "calendar_link": null,
+    "resources_link": "#" 
+  },
+  {
+    "id": "future_ai_trends_july2025",
+    "title": "AI Trends 2025: Innovations & Opportunities",
+    "date": "2025-07-10T15:00:00Z",
+    "type": "Seminar",
+    "mode": "Online",
+    "platform": "Zoom",
+    "organizer": "Code With Pritom",
+    "image": "https://placehold.co/600x400/1e90ff/fff?text=AI+Trends+2025",
+    "summary": "Explore the latest advancements and future directions in Artificial Intelligence with industry leaders. Topics include generative AI, ethical AI, and real-world applications.",
+    "speakers": [
+      {"name": "Dr. Lina Rahman", "title": "AI Research Lead"},
+      {"name": "Arup Bhowmik Pritom", "title": "Host"}
+    ],
+    "tags": ["AI", "Seminar", "Future", "Innovation"],
+    "rsvp_link": "#",
+    "calendar_link": "#",
+    "resources_link": null
+  }
+]

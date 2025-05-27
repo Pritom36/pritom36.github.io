@@ -1,0 +1,172 @@
+[
+  {
+    "id": "ewu003",
+    "university": "East West University",
+    "logo": "assets/img/ewu_logo.png",
+    "title": "EWU CSE Department Launches Advanced Cybersecurity Course",
+    "date": "2023-11-15T10:00:00Z",
+    "category": "Academics",
+    "summary": "East West University's CSE department introduces a new advanced course on Cybersecurity, focusing on threat analysis and ethical hacking, available from Spring 2024.",
+    "image": "https://placehold.co/600x300/ffc107/000?text=EWU+Cybersecurity",
+    "media": {
+      "video": null,
+      "audio": null,
+      "pdf": "https://example.com/ewu_cybersecurity_brochure.pdf",
+      "link": "https://ewu.edu/cse/cybersecurity-course"
+    },
+    "tags": ["EWU", "Cybersecurity", "New Course", "Academics"]
+  },
+  {
+    "id": "buet002",
+    "university": "BUET",
+    "logo": "assets/img/uni_placeholder.png",
+    "title": "BUET Robotics Team Wins International Competition",
+    "date": "2023-11-10T14:30:00Z",
+    "category": "Achievements",
+    "summary": "The robotics team from Bangladesh University of Engineering and Technology (BUET) secured first place in the 'RoboChallenge Asia 2023' held in Singapore.",
+    "image": "https://placehold.co/600x300/007bff/fff?text=BUET+Robotics+Win",
+    "media": {
+      "video": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+      "audio": null,
+      "pdf": null,
+      "link": "https://buet.ac.bd/cse/news/robotics-win-2023"
+    },
+    "tags": ["BUET", "Robotics", "Competition", "International"]
+  },
+  {
+    "id": "du002",
+    "university": "Dhaka University",
+    "logo": "assets/img/uni_placeholder.png",
+    "title": "Dhaka University CSE Hosts Workshop on Machine Learning",
+    "date": "2023-11-05T09:00:00Z",
+    "category": "Workshop",
+    "summary": "A hands-on workshop on 'Applied Machine Learning with Python' was successfully conducted by the CSE department of Dhaka University, attracting over 200 participants.",
+    "image": "https://placehold.co/600x300/28a745/fff?text=DU+ML+Workshop",
+    "media": {
+      "video": null,
+      "audio": "https://example.com/du_ml_workshop_recap.mp3",
+      "pdf": "https://example.com/du_ml_workshop_slides.pdf",
+      "link": null
+    },
+    "tags": ["DU", "Machine Learning", "Workshop", "Python"]
+  },
+  {
+    "id": "nsu002",
+    "university": "North South University",
+    "logo": "assets/img/uni_placeholder.png",
+    "title": "NSU Announces Inter-University Programming Contest 'CodeSprint 2024'",
+    "date": "2023-11-01T11:00:00Z",
+    "category": "Event",
+    "summary": "North South University's CSE department has officially announced 'CodeSprint 2024', an inter-university programming contest. Registrations open next month.",
+    "image": "https://placehold.co/600x300/dc3545/fff?text=NSU+CodeSprint",
+    "media": {
+      "video": null,
+      "audio": null,
+      "pdf": null,
+      "link": "https://nsu.edu/codesprint2024"
+    },
+    "tags": ["NSU", "Programming Contest", "Event", "Competition"]
+  },
+  {
+    "id": "ewu002",
+    "university": "East West University",
+    "logo": "assets/img/ewu_logo.png",
+    "title": "EWU Professor Awarded Grant for AI Research",
+    "date": "2023-10-28T15:00:00Z",
+    "category": "Research",
+    "summary": "Dr. Jane Doe from EWU's CSE department has received a significant research grant to explore innovative applications of AI in healthcare.",
+    "image": "https://placehold.co/600x300/ffc107/000?text=EWU+AI+Grant",
+    "media": {
+        "video": null,
+        "audio": null,
+        "pdf": null,
+        "link": "https://ewu.edu/news/ai-research-grant"
+    },
+    "tags": ["EWU", "AI", "Research", "Grant", "Healthcare"]
+  },
+  {
+    "id": "ju001",
+    "university": "Jahangirnagar University",
+    "logo": "assets/img/uni_placeholder.png",
+    "title": "JU CSE Department Organizes Seminar on Quantum Computing",
+    "date": "2023-10-25T13:00:00Z",
+    "category": "Seminar",
+    "summary": "A seminar on the 'Future of Quantum Computing' was held at Jahangirnagar University, featuring guest speakers from leading tech companies.",
+    "image": "https://placehold.co/600x300/17a2b8/fff?text=JU+Quantum+Seminar",
+    "media": {
+        "video": "https://www.youtube.com/embed/exampleVideoId",
+        "audio": null,
+        "pdf": "https://example.com/ju_quantum_slides.pdf",
+        "link": null
+    },
+    "tags": ["JU", "Quantum Computing", "Seminar", "Tech Talk"]
+  },
+  {
+    "id": "cuet001",
+    "university": "CUET",
+    "logo": "assets/img/uni_placeholder.png",
+    "title": "CUET Students Develop Smart City Solution Prototype",
+    "date": "2023-10-20T16:00:00Z",
+    "category": "Innovation",
+    "summary": "A team of CSE students from Chittagong University of Engineering and Technology (CUET) presented their innovative smart city solution prototype at a national tech fair.",
+    "image": "https://placehold.co/600x300/6f42c1/fff?text=CUET+Smart+City",
+    "media": {
+        "video": null,
+        "audio": null,
+        "pdf": null,
+        "link": "https://cuet.ac.bd/projects/smartcity"
+    },
+    "tags": ["CUET", "Smart City", "Innovation", "Student Project"]
+  },
+  {
+    "id": "sust001",
+    "university": "SUST",
+    "logo": "assets/img/uni_placeholder.png",
+    "title": "SUST CSE Alumni Meetup 2023 Scheduled for December",
+    "date": "2023-10-18T12:00:00Z",
+    "category": "Alumni Event",
+    "summary": "Shahjalal University of Science and Technology (SUST) CSE department is organizing its annual alumni meetup in December. All alumni are invited to register.",
+    "image": "https://placehold.co/600x300/fd7e14/000?text=SUST+Alumni+Meet",
+    "media": {
+        "video": null,
+        "audio": null,
+        "pdf": null,
+        "link": "https://sust.edu/cse/alumni2023"
+    },
+    "tags": ["SUST", "Alumni", "Event", "Networking"]
+  },
+  {
+    "id": "bracu001",
+    "university": "BRAC University",
+    "logo": "assets/img/uni_placeholder.png",
+    "title": "BRAC University Partners with Tech Giant for Internship Program",
+    "date": "2023-10-15T09:30:00Z",
+    "category": "Partnership",
+    "summary": "BRAC University's CSE department has partnered with a leading multinational tech company to offer exclusive internship opportunities for its students.",
+    "image": "https://placehold.co/600x300/20c997/000?text=BRACU+Internship",
+    "media": {
+        "video": null,
+        "audio": null,
+        "pdf": null,
+        "link": "https://bracu.ac.bd/cse/internships"
+    },
+    "tags": ["BRACU", "Internship", "Partnership", "Career"]
+  },
+  {
+    "id": "ewu001",
+    "university": "East West University",
+    "logo": "assets/img/ewu_logo.png",
+    "title": "EWU CSE Fest 2023 Concludes Successfully",
+    "date": "2023-10-12T17:00:00Z",
+    "category": "Event",
+    "summary": "The annual CSE Fest at East West University concluded with a grand prize-giving ceremony, showcasing innovative projects and competitive programming skills.",
+    "image": "https://placehold.co/600x300/ffc107/000?text=EWU+CSE+Fest",
+    "media": {
+        "video": "https://www.youtube.com/embed/ewuFestRecap",
+        "audio": null,
+        "pdf": "https://example.com/ewu_cse_fest_report.pdf",
+        "link": "https://ewu.edu/news/cse-fest-2023"
+    },
+    "tags": ["EWU", "CSE Fest", "Event", "Competition", "Student Projects"]
+  }
+]
