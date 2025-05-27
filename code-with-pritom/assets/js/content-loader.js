@@ -50,6 +50,7 @@ function getBangladeshNow() {
     const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
     return new Date(utc + 6 * 60 * 60 * 1000);
 }
+window.getBangladeshNow = getBangladeshNow; // <-- Make available globally
 
 /**
  * Determines the status of a post based on its date.

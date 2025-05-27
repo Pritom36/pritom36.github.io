@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code With Pritom - Your Tech & CSE Hub</title>
-    <meta name="description" content="Welcome to Code With Pritom! Your central source for CSE news, tech insights, event updates, programming tips, and digital skills for students in Bangladesh.">
+    <title>&ltCode With Pritom/&gt - Your Tech & CSE Hub</title>
+    <meta name="description" content="Welcome to &ltCode With Pritom/&gt! Your central source for CSE news, tech insights, event updates, programming tips, and digital skills for students in Bangladesh.">
 
     <!-- Favicon (place these in your project root) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.gif" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
@@ -39,10 +39,6 @@
     <!-- Header -->
     <header class="site-header" id="siteHeader">
         <div class="container header-container">
-            <a href="index.html" class="logo-link" aria-label="Code With Pritom Homepage">
-                <img src="assets/img/logo.png" alt="Code With Pritom Logo" class="logo-image">
-                <span class="logo-text">Code With Pritom</span>
-            </a>
             <nav class="main-navigation" id="mainNav">
                 <button class="menu-close-btn" id="menuCloseBtn" aria-label="Close menu"><i class="fas fa-times"></i></button>
                 <ul>
@@ -86,8 +82,36 @@
         <section class="hero-section">
             <div class="container">
                 <div class="hero-content" data-aos="fade-up">
+                    <h1 class="hero-title">
+                        <span class="typing-text" data-text="<Code With Pritom/>"></span>
+                    </h1>
+                    <style>
+                        .typing-text {
+                            border-right: 3px solid;
+                            animation: typing 3.5s steps(30), blink .5s step-end infinite alternate;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            display: inline-block;
+                        }
+                        
+                        @keyframes typing {
+                            from { width: 0 }
+                            to { width: 100% }
+                        }
+                        
+                        @keyframes blink {
+                            50% { border-color: transparent }
+                        }
+                    </style>
+                    <script>
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const text = document.querySelector('.typing-text');
+                            text.textContent = text.dataset.text;
+                            text.classList.add('highlight');
+                        });
+                    </script>
                     <h1 class="hero-title">Empowering <span class="highlight">CSE Students</span> Across Bangladesh</h1>
-                    <p class="hero-subtitle">Your daily digest of tech news, university updates, coding tips, and career insights. Curated by Arup Bhowmik Pritom.</p>
+                    <p class="hero-subtitle">Your daily digest of tech news, university updates, coding tips, and career insights</p>
                     <div class="hero-cta">
                         <a href="sections/cse-news.html" class="btn btn-primary btn-lg">Explore Latest News</a>
                         <a href="#featured-content" class="btn btn-outline-light btn-lg scroll-to">Featured Content</a>
@@ -97,76 +121,92 @@
             </div>
         </section>
 
-        <!-- Latest Updates Section -->
+        <!-- CSE News Section -->
         <section class="latest-updates-section section-padding">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Fresh Off The Press</h2>
-                    <p class="section-subtitle">The most recent happenings in the world of CSE and tech.</p>
-                    <a href="sections/cse-news.html" class="btn btn-secondary view-all-btn">View All CSE News <i class="fas fa-arrow-right"></i></a>
+                    <h2 class="section-title">CSE News</h2>
+                    <p class="section-subtitle">Latest news from CSE departments across Bangladesh.</p>
+                    <a href="sections/cse-news.html" class="btn btn-secondary view-all-btn">View All News <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div id="latest-news-container" class="grid-layout news-grid dynamic-content-container">
                     <!-- JS will populate this with items from cse_department_news.json -->
                     <div class="content-loader-placeholder">Loading latest updates...</div>
                 </div>
-                <!-- No pagination here, just a few latest items -->
             </div>
         </section>
 
-        <!-- Featured Content Section (e.g., EWU Spotlight, Hot Seminar) -->
-        <section id="featured-content" class="featured-content-section section-padding bg-light-alt">
+        <!-- EWU Zone Section -->
+        <section class="featured-content-section section-padding bg-light-alt">
             <div class="container">
                 <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Spotlight & Highlights</h2>
-                    <p class="section-subtitle">Don't miss these important updates and popular resources.</p>
+                    <h2 class="section-title">EWU Zone</h2>
+                    <p class="section-subtitle">Spotlight on East West University CSE news and achievements.</p>
+                    <a href="sections/ewu-section.html" class="btn btn-secondary view-all-btn">View All EWU News <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div id="featured-items-container" class="grid-layout featured-grid dynamic-content-container">
-                    <!-- JS could populate this from ewu_news.json, seminars.json, etc. or a dedicated featured.json -->
-                    <!-- Example static placeholder, to be replaced by dynamic content -->
-                    <article class="card content-card featured-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="card-image-container">
-                            <img src="https://placehold.co/600x400/ffc107/000?text=EWU+Spotlight" alt="EWU Spotlight" class="card-image">
-                            <span class="card-category-badge ewu-badge">EWU Zone</span>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title"><a href="sections/ewu-section.html?id=ewu_item_1">EWU Announces New AI Research Initiative</a></h3>
-                            <p class="card-excerpt">East West University's CSE department is launching a groundbreaking research program focused on ethical AI...</p>
-                            <div class="card-meta">
-                                <span class="meta-date"><i class="fas fa-calendar-alt"></i> Oct 28, 2023</span>
-                            </div>
-                            <a href="sections/ewu-section.html?id=ewu_item_1" class="btn btn-link card-read-more">Read More <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </article>
-                    <article class="card content-card featured-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="card-image-container">
-                            <img src="https://placehold.co/600x400/007bff/fff?text=Top+Seminar" alt="Top Seminar" class="card-image">
-                            <span class="card-category-badge seminar-badge">Seminar</span>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title"><a href="sections/seminars.html?id=seminar_item_1">Upcoming: Web3 & Decentralized Future</a></h3>
-                            <p class="card-excerpt">Join our free online seminar to explore the fundamentals of Web3, blockchain, and their impact on the future...</p>
-                             <div class="card-meta">
-                                <span class="meta-date"><i class="fas fa-calendar-alt"></i> Nov 15, 2023</span>
-                                <span class="meta-location"><i class="fas fa-map-marker-alt"></i> Online</span>
-                            </div>
-                            <a href="sections/seminars.html?id=seminar_item_1" class="btn btn-link card-read-more">Event Details <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </article>
-                     <article class="card content-card featured-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="card-image-container">
-                            <img src="https://placehold.co/600x400/28a745/fff?text=Hot+Programming+Tip" alt="Programming Tip" class="card-image">
-                            <span class="card-category-badge programming-badge">Programming</span>
-                        </div>
-                        <div class="card-content">
-                            <h3 class="card-title"><a href="sections/programming.html?tip=js_async_await">Mastering Async/Await in JavaScript</a></h3>
-                            <p class="card-excerpt">A quick guide to understanding and using async/await for cleaner asynchronous code in JavaScript...</p>
-                             <div class="card-meta">
-                                <span class="meta-difficulty"><i class="fas fa-signal"></i> Intermediate</span>
-                            </div>
-                            <a href="sections/programming.html?tip=js_async_await" class="btn btn-link card-read-more">Read Tip <i class="fas fa-chevron-right"></i></a>
-                        </div>
-                    </article>
-                    <!-- End Example static placeholder -->
+                <div id="featured-ewu-container" class="grid-layout featured-grid dynamic-content-container">
+                    <!-- JS will populate this with items from ewu_news.json -->
+                    <div class="content-loader-placeholder">Loading EWU news...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seminars & Events Section -->
+        <section class="latest-updates-section section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Seminars & Events</h2>
+                    <p class="section-subtitle">Upcoming and recent seminars, workshops, and meetups.</p>
+                    <a href="sections/seminars.html" class="btn btn-secondary view-all-btn">View All Events <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div id="latest-events-container" class="grid-layout events-grid dynamic-content-container">
+                    <!-- JS will populate this with items from seminars.json -->
+                    <div class="content-loader-placeholder">Loading events...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Programming Tips Section -->
+        <section class="latest-updates-section section-padding bg-light-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Programming Tips</h2>
+                    <p class="section-subtitle">Sharpen your coding skills with practical tips and snippets.</p>
+                    <a href="sections/programming.html" class="btn btn-secondary view-all-btn">View All Tips <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div id="latest-programming-container" class="grid-layout programming-grid dynamic-content-container">
+                    <!-- JS will populate this with items from programming_tips.json -->
+                    <div class="content-loader-placeholder">Loading programming tips...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PC Tricks Section -->
+        <section class="latest-updates-section section-padding">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">PC Tricks</h2>
+                    <p class="section-subtitle">Boost your productivity with handy PC tips and hacks.</p>
+                    <a href="sections/pc-tricks.html" class="btn btn-secondary view-all-btn">View All PC Tricks <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div id="latest-pc-tricks-container" class="grid-layout pc-tricks-grid dynamic-content-container">
+                    <!-- JS will populate this with items from pc_tricks.json -->
+                    <div class="content-loader-placeholder">Loading PC tricks...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marketing Insights Section -->
+        <section class="latest-updates-section section-padding bg-light-alt">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <h2 class="section-title">Digital Marketing Insights</h2>
+                    <p class="section-subtitle">Stay ahead with the latest in SEO, SMM, and analytics.</p>
+                    <a href="sections/marketing.html" class="btn btn-secondary view-all-btn">View All Marketing Insights <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div id="latest-marketing-container" class="grid-layout marketing-grid dynamic-content-container">
+                    <!-- JS will populate this with items from marketing_updates.json -->
+                    <div class="content-loader-placeholder">Loading marketing insights...</div>
                 </div>
             </div>
         </section>
@@ -175,7 +215,7 @@
         <section class="cta-section section-padding">
             <div class="container text-center" data-aos="zoom-in">
                 <h2 class="cta-title">Don't Miss Out!</h2>
-                <p class="cta-subtitle">Subscribe to "Code With Pritom" and get the latest updates, tips, and event invites directly in your inbox.</p>
+                <p class="cta-subtitle">Subscribe to "&ltCode With Pritom/&gt" and get the latest updates, tips, and event invites directly in your inbox.</p>
                 <form id="indexSubscriptionForm" class="subscription-form">
                     <input type="email" name="email" placeholder="Enter your email address" required aria-label="Email for subscription">
                     <button type="submit" class="btn btn-primary btn-lg">Subscribe Now</button>
@@ -191,8 +231,8 @@
         <div class="container">
             <div class="footer-widgets">
                 <div class="footer-widget about-widget">
-                    <h4 class="widget-title">Code With Pritom</h4>
-                    <img src="assets/img/logo.png" alt="Code With Pritom Footer Logo" class="footer-logo">
+                    <h4 class="widget-title">&ltCode With Pritom/&gt</h4>
+                    <img src="favicon.gif" alt="&ltCode With Pritom/&gt Footer Logo" class="footer-logo">
                     <p>Your companion in navigating the world of Computer Science and Engineering. Curated insights by Arup Bhowmik Pritom.</p>
                 </div>
                 <div class="footer-widget links-widget">
@@ -229,7 +269,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© <span id="currentYear"></span> Code With Pritom. Crafted with <i class="fas fa-heart" style="color: red;"></i> by Arup Bhowmik Pritom.</p>
+                <p>© <span id="currentYear"></span> &ltCode With Pritom/&gt. Crafted with <i class="fas fa-heart" style="color: red;"></i> by Arup Bhowmik Pritom.</p>
             </div>
         </div>
     </footer>
@@ -247,21 +287,64 @@
     <script src="assets/js/content-loader.js"></script> <!-- For fetching and displaying dynamic content -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-            // Initialize content for index page
+            // CSE News (top 2)
             if (document.getElementById('latest-news-container')) {
                 loadContent('data/cse_department_news.json', 'latest-news-container', {
-                    limit: 3,
+                    limit: 2,
                     template: 'newsCard',
                     sort: { field: 'date', order: 'desc' }
                 });
             }
-            if (document.getElementById('featured-items-container')) {
-                // Example: Load 1 EWU, 1 Seminar, 1 Programming tip (custom logic can be added)
-                // For now, just show 1 EWU spotlight as a demo
-                loadContent('data/ewu_news.json', 'featured-items-container', {
-                    limit: 1,
+            // EWU Zone (top 2, spotlight first)
+            if (document.getElementById('featured-ewu-container')) {
+                loadContent('data/ewu_news.json', 'featured-ewu-container', {
+                    limit: 2,
                     template: 'ewuSpotlightCard',
-                    filter: (item) => item.isSpotlight === true,
+                    sort: { field: 'date', order: 'desc' }
+                });
+            }
+            // Seminars/Events (top 2 upcoming)
+            if (document.getElementById('latest-events-container')) {
+                // Use getBangladeshNow from content-loader.js if available, else fallback
+                const getBangladeshNow = window.getBangladeshNow || function() {
+                    const now = new Date();
+                    const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
+                    return new Date(utc + 6 * 60 * 60 * 1000);
+                };
+                loadContent('data/seminars.json', 'latest-events-container', {
+                    limit: 2,
+                    template: 'eventCard',
+                    filter: (item) => {
+                        try {
+                            return new Date(item.date) >= getBangladeshNow();
+                        } catch (e) {
+                            return false;
+                        }
+                    },
+                    sort: { field: 'date', order: 'asc' }
+                });
+            }
+            // Programming Tips (top 2)
+            if (document.getElementById('latest-programming-container')) {
+                loadContent('data/programming_tips.json', 'latest-programming-container', {
+                    limit: 2,
+                    template: 'programmingTipCard',
+                    sort: { field: 'date', order: 'desc' }
+                });
+            }
+            // PC Tricks (top 2)
+            if (document.getElementById('latest-pc-tricks-container')) {
+                loadContent('data/pc_tricks.json', 'latest-pc-tricks-container', {
+                    limit: 2,
+                    template: 'pcTrickCard',
+                    sort: { field: 'date', order: 'desc' }
+                });
+            }
+            // Marketing Insights (top 2)
+            if (document.getElementById('latest-marketing-container')) {
+                loadContent('data/marketing_updates.json', 'latest-marketing-container', {
+                    limit: 2,
+                    template: 'marketingCard',
                     sort: { field: 'date', order: 'desc' }
                 });
             }
